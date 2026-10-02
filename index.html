@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ta, en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hornbill Apps - நாட்கதிர் (Naatkathir: Tamil Calendar)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #070d18;
+            --card-bg: rgba(19, 30, 49, 0.85);
+            --gold: #FFC42A;
+            --gold-gradient: linear-gradient(135deg, #FFD54F 0%, #FFB300 100%);
+            --text-main: #FFFFFF;
+            --text-sub: #94A3B8;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 860px;
+            width: 90%;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(255, 196, 42, 0.15);
+            color: var(--gold);
+            border: 1px solid rgba(255, 196, 42, 0.4);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: var(--gold);
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .desc {
+            color: var(--text-sub);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 32px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 18px;
+            border-radius: 16px;
+        }
+        .feature-item h3 {
+            color: var(--gold);
+            font-size: 1.05rem;
+            margin-bottom: 6px;
+        }
+        .feature-item p {
+            color: var(--text-sub);
+            font-size: 0.9rem;
+        }
+        .app-links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        .btn-gold {
+            background: var(--gold-gradient);
+            color: #0F172A;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 16px;
+            font-weight: 800;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 16px rgba(255, 196, 42, 0.35);
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 196, 42, 0.5);
+        }
+        .btn-outline {
+            background: transparent;
+            color: #FFFFFF;
+            border: 1.5px solid rgba(255, 255, 255, 0.2);
+            text-decoration: none;
+            padding: 14px 24px;
+            border-radius: 16px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+        .btn-outline:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 30px 20px;
+            color: var(--text-sub);
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            width: 100%;
+        }
+        footer a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">Hornbill Apps</div>
+            <h1>நாட்கதிர்: Tamil Calendar</h1>
+            <div class="subtitle">நாளும் நலம் தரும் வழிகாட்டி</div>
+            <p class="desc">
+                Tamil Daily & Monthly Calendar with Nalla Neram, Raghu Kaalam, Rasi Palan, Festivals, Spiritual Slokas, and Daily Mind Games.
+            </p>
+            <div class="app-links">
+                <a href="https://play.google.com/store/apps/details?id=com.hornbillapps.tamilcalendar" class="btn-gold">
+                    <span>Google Play Store</span>
+                </a>
+                <a href="/app-ads.txt" class="btn-outline">
+                    <span>app-ads.txt</span>
+                </a>
+            </div>
+        </header>
+
+        <section class="card">
+            <h2 style="font-size: 1.3rem; margin-bottom: 8px;">Key App Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>📅 தினசரி நாட்காட்டி</h3>
+                    <p>Daily auspicious times, Nalla Neram, Gowri Panchangam, Sunrise, Sunset, and Tithi details.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🌟 ராசி பலன்</h3>
+                    <p>Accurate daily horoscopes and astrological insights for all 12 Rasis.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🕉️ பக்தி சுலோகங்கள்</h3>
+                    <p>Comprehensive devotional slokas, mantras, and lyrics with teleprompter auto-scroll.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🎮 தினசரி புதிர்கள்</h3>
+                    <p>Daily 5 Difference puzzle, Tamil Word Quiz, and engaging brain games.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 style="font-size: 1.3rem; margin-bottom: 8px;">Developer & Contact Information</h2>
+            <p style="color: var(--text-sub); margin-bottom: 12px;">
+                Hornbill Apps is dedicated to building modern, privacy-focused, and culturally rich utilities.
+            </p>
+            <p style="color: var(--text-sub); font-size: 0.95rem;">
+                <strong>Developer:</strong> Hornbill Apps<br>
+                <strong>Publisher:</strong> Dinesh S<br>
+                <strong>Website:</strong> <a href="https://dineshsdev.github.io" style="color: var(--gold);">https://dineshsdev.github.io</a>
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Hornbill Apps. All rights reserved. | <a href="/app-ads.txt">app-ads.txt</a></p>
+    </footer>
+</body>
+</html>
