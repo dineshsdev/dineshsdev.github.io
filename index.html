@@ -442,46 +442,57 @@
             line-height: 1.6;
         }
 
-        /* Screenshots Showcase Section */
-        .showcase-section {
-            padding: 60px 0 80px;
+        /* Play Store Gallery Section */
+        .playstore-gallery-section {
+            padding: 40px 0 80px;
         }
 
-        .screenshots-scroll {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+        .playstore-scroll-wrapper {
+            position: relative;
+            width: 100%;
             overflow-x: auto;
-            padding: 20px 0 30px;
+            padding-bottom: 24px;
+            scrollbar-width: thin;
+            scrollbar-color: var(--gold) rgba(255, 255, 255, 0.05);
         }
 
-        .screenshot-item {
+        .playstore-scroll-wrapper::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .playstore-scroll-wrapper::-webkit-scrollbar-thumb {
+            background: var(--gold);
+            border-radius: 4px;
+        }
+
+        .playstore-scroll {
+            display: flex;
+            gap: 20px;
+            width: max-content;
+            padding: 10px 4px;
+        }
+
+        .playstore-card {
+            width: 240px;
             border-radius: 20px;
             overflow: hidden;
             border: 1px solid var(--border-glass);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
             background: #000;
-            transition: transform 0.3s ease, border-color 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            flex-shrink: 0;
         }
 
-        .screenshot-item:hover {
-            transform: scale(1.03);
+        .playstore-card:hover {
+            transform: translateY(-8px) scale(1.02);
             border-color: var(--border-gold);
+            box-shadow: 0 20px 40px rgba(255, 196, 42, 0.2);
         }
 
-        .screenshot-item img {
+        .playstore-card img {
             width: 100%;
             height: auto;
             display: block;
-        }
-
-        .screenshot-caption {
-            padding: 12px;
-            text-align: center;
-            font-size: 0.85rem;
-            font-weight: 700;
-            color: var(--gold-light);
-            background: rgba(15, 23, 42, 0.9);
         }
 
         /* Testimonials / Stats */
@@ -592,9 +603,6 @@
             .hero-cta {
                 justify-content: center;
             }
-            .screenshots-scroll {
-                grid-template-columns: repeat(2, 1fr);
-            }
             .footer-grid {
                 grid-template-columns: 1fr;
                 gap: 30px;
@@ -609,9 +617,6 @@
                 font-size: 2.2rem;
             }
             .stats-strip {
-                grid-template-columns: 1fr;
-            }
-            .screenshots-scroll {
                 grid-template-columns: 1fr;
             }
         }
@@ -666,7 +671,7 @@
 
             <div class="hero-visual">
                 <div class="phone-frame">
-                    <img src="images/screen_daily.jpg" alt="Naatkathir Daily Tamil Calendar Screen">
+                    <img src="images/play_screen_1.jpg" alt="Naatkathir Tamil Calendar Official Screen">
                 </div>
                 <div class="floating-card card-top">
                     <div class="icon">✨</div>
@@ -773,30 +778,40 @@
             </div>
         </section>
 
-        <!-- App Screenshots Gallery -->
-        <section class="showcase-section">
+        <!-- Official Play Store Showcase Gallery -->
+        <section class="playstore-gallery-section">
             <div class="section-header">
-                <span class="section-tag">App Screenshots</span>
-                <h2 class="section-title">அழகிய நவீனத் தமிழ் வடிவமைப்பு</h2>
-                <p class="section-desc">எளிய, கண்களுக்கு இதமான டார்க் மற்றும் லைட் தீம் வடிவமைப்பு.</p>
+                <span class="section-tag">Play Store Preview</span>
+                <h2 class="section-title">Google Play Store நேரடிப் பார்வை</h2>
+                <p class="section-desc">கூகுள் பிளே ஸ்டோரில் இடம்பெற்றுள்ள அதிகாரப்பூர்வத் திரை அமைப்புகள்.</p>
             </div>
 
-            <div class="screenshots-scroll">
-                <div class="screenshot-item">
-                    <img src="images/screen_daily.jpg" alt="Daily Naal Kaatti View">
-                    <div class="screenshot-caption">தினசரி நாள்காட்டி</div>
-                </div>
-                <div class="screenshot-item">
-                    <img src="images/screen_month.jpg" alt="Monthly Wall Calendar View">
-                    <div class="screenshot-caption">மாத காலண்டர்</div>
-                </div>
-                <div class="screenshot-item">
-                    <img src="images/screen_feature1.jpg" alt="Tamil Panchangam & Devotional View">
-                    <div class="screenshot-caption">பஞ்சாங்கம் & சுலோகங்கள்</div>
-                </div>
-                <div class="screenshot-item">
-                    <img src="images/screen_feature2.jpg" alt="Rasi Palan & Games View">
-                    <div class="screenshot-caption">ராசி பலன் & புதிர்கள்</div>
+            <div class="playstore-scroll-wrapper">
+                <div class="playstore-scroll">
+                    <div class="playstore-card">
+                        <img src="images/play_screen_1.jpg" alt="Daily Naal Kaatti View" loading="lazy">
+                    </div>
+                    <div class="playstore-card">
+                        <img src="images/play_screen_2.jpg" alt="Monthly Wall Calendar View" loading="lazy">
+                    </div>
+                    <div class="playstore-card">
+                        <img src="images/play_screen_3.jpg" alt="Tamil Panchangam View" loading="lazy">
+                    </div>
+                    <div class="playstore-card">
+                        <img src="images/play_screen_4.jpg" alt="Gowri Panchangam View" loading="lazy">
+                    </div>
+                    <div class="playstore-card">
+                        <img src="images/play_screen_5.jpg" alt="Devotional Slokas View" loading="lazy">
+                    </div>
+                    <div class="playstore-card">
+                        <img src="images/play_screen_6.jpg" alt="Rasi Palan View" loading="lazy">
+                    </div>
+                    <div class="playstore-card">
+                        <img src="images/play_screen_7.jpg" alt="Daily Mind Games & Puzzles" loading="lazy">
+                    </div>
+                    <div class="playstore-card">
+                        <img src="images/play_screen_8.jpg" alt="Home Screen Widgets View" loading="lazy">
+                    </div>
                 </div>
             </div>
         </section>
