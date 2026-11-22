@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Brick 3310: Retro Dumbphone Launcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #070d18;
+            --card-bg: rgba(19, 30, 49, 0.85);
+            --accent: #A7D442;
+            --gold: #FFC42A;
+            --text-main: #FFFFFF;
+            --text-sub: #94A3B8;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .top-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+        .switch-link {
+            color: var(--text-sub);
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 600;
+        }
+        .switch-link:hover {
+            color: var(--gold);
+        }
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: #FFFFFF;
+        }
+        .last-updated {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: var(--accent);
+        }
+        p, li {
+            color: #CBD5E1;
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        code {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #E2E8F0;
+        }
+        .highlight-box {
+            background: rgba(167, 212, 66, 0.08);
+            border-left: 4px solid var(--accent);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: var(--text-sub);
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 24px;
+        }
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-nav">
+            <a href="/" class="back-link">← Return to Home</a>
+            <a href="/privacy-policy.html" class="switch-link">View Naatkathir (Tamil Calendar) Privacy Policy →</a>
+        </div>
+
+        <h1>Privacy Policy — Brick 3310 Launcher</h1>
+        <div class="last-updated">Effective &amp; Last Updated: November 22, 2026</div>
+
+        <p>
+            Welcome to <strong>Brick 3310: Retro Dumbphone Launcher</strong> (package ID: <code>com.hornbillapps.brick3310launcher</code>, referred to as "the App", "we", "our", or "us"), developed and published by <strong>Hornbill Apps</strong>. We respect your privacy and are committed to transparent, on-device processing and protecting your personal information.
+        </p>
+
+        <div class="highlight-box">
+            <strong>Key Summary:</strong> We do not sell, rent, or trade your personal data. We do not require account registration, and all launcher features—including installed app discovery, T9 contact search, speed dial, notification badges, media playback controls, and screen time statistics—operate <strong>100% locally on your device</strong>.
+        </div>
+
+        <h2>1. Permissions &amp; On-Device Data Processing</h2>
+        <p>Because Brick 3310 Launcher functions as a replacement Android Home Screen and digital detox utility, it requests certain system permissions strictly to deliver core launcher functionality on your device:</p>
+        <ul>
+            <li><strong>Installed Applications (<code>QUERY_ALL_PACKAGES</code>):</strong> Required for any home screen launcher to list, search (via T9 keypad), pin, lock, or launch the applications installed on your device. Your list of installed apps is processed strictly locally on your phone and is never transmitted to external servers.</li>
+            <li><strong>Contacts (<code>READ_CONTACTS</code> — Optional):</strong> If granted, the App reads your device contacts locally to enable T9 contact dialing in the retro dialer and 1–9 Speed Dial assignment. Your contacts and phone numbers never leave your device.</li>
+            <li><strong>Notification Access &amp; Do Not Disturb (<code>NotificationListenerService</code> &amp; <code>ACCESS_NOTIFICATION_POLICY</code> — Optional):</strong> If enabled by you, Notification Access is used strictly on-device to display unread call/message counts on the retro LCD screen, power the Notification Digest filter, display active music track metadata and playback controls on the home screen, and allow toggling Silent/Vibrate/Normal ringer profiles via the <code>#</code> key. We never read, store, or transmit your notification messages to any server.</li>
+            <li><strong>Usage Access / Screen Time (<code>PACKAGE_USAGE_STATS</code> — Optional):</strong> If enabled by you, Usage Access is used locally on-device to calculate and display your daily screen time statistics for digital wellbeing.</li>
+            <li><strong>System Settings &amp; App Management (<code>WRITE_SETTINGS</code>, <code>SET_ALARM</code>, <code>REQUEST_DELETE_PACKAGES</code>):</strong> Used only when you explicitly adjust screen brightness from the quick-control bar, open system alarms, or choose to uninstall an app from the app drawer.</li>
+        </ul>
+
+        <h2>2. Third-Party Services, Billing &amp; Advertising</h2>
+        <p>The App integrates standard, privacy-compliant Google services to support app stability, configuration, optional in-app purchases, and free-tier advertisements:</p>
+        <ul>
+            <li><strong>Google Play Billing:</strong> All Pro Lifetime unlock purchases and subscriptions/restorations are processed securely through Google Play's official billing system. We do not access or store your credit card, bank, or payment details.</li>
+            <li><strong>Google AdMob:</strong> For users on the free tier, the App may display banner, interstitial, or optional rewarded advertisements (e.g., unlocking temporary arcade game passes). Google AdMob may use device identifiers and advertising IDs in accordance with <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: var(--accent);">Google's Advertising Policies</a>. Pro users enjoy an ad-free experience.</li>
+            <li><strong>Firebase (Analytics, Crashlytics &amp; Remote Config):</strong> We use Google Firebase to collect anonymous, aggregated diagnostic crash logs (to fix bugs and improve stability), anonymous feature usage metrics, and remote configuration parameters (such as app update prompts and promotional display settings).</li>
+        </ul>
+
+        <h2>3. Local Data Storage &amp; Security</h2>
+        <p>
+            All your customizations—including selected LCD themes, keypad layouts, speed dial assignments, pinned or locked apps, high scores in built-in retro games (Snake II, Runner, 2048, Impact Space +), and focus timer preferences—are stored locally in your device's private application storage. Clearing the app data or uninstalling the App permanently removes these local preferences.
+        </p>
+
+        <h2>4. Children's Privacy</h2>
+        <p>
+            Our application is a general-audience productivity and personalization launcher. We do not knowingly collect any personally identifiable information from children under the age of 13.
+        </p>
+
+        <h2>5. Your Choices &amp; Revoking Permissions</h2>
+        <p>
+            All optional permissions (Contacts, Notification Access, Do Not Disturb, Usage Access) are completely under your control. You can grant or revoke any permission at any time through your Android device settings under <em>Settings &rarr; Apps &rarr; Brick 3310 Launcher &rarr; Permissions</em> or <em>Special App Access</em>.
+        </p>
+
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time to reflect new features or regulatory requirements. Any updates will be published on this page with a revised "Last Updated" date.
+        </p>
+
+        <h2>7. Contact Us</h2>
+        <p>
+            If you have any questions, feedback, or concerns regarding this Privacy Policy or our privacy practices, please contact us:
+        </p>
+        <p>
+            <strong>Developer:</strong> Hornbill Apps (Dinesh S)<br>
+            <strong>Website:</strong> <a href="https://dineshsdev.github.io" style="color: var(--accent);">https://dineshsdev.github.io</a><br>
+            <strong>Email:</strong> <a href="mailto:dinesh.hornbill@gmail.com" style="color: var(--accent);">dinesh.hornbill@gmail.com</a>
+        </p>
+
+        <footer>
+            <p>© 2026 Hornbill Apps. All rights reserved. | <a href="/brick3310-privacy-policy.html">Brick 3310 Privacy Policy</a> | <a href="/privacy-policy.html">Naatkathir Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
